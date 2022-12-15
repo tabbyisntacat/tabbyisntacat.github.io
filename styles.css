@@ -1,0 +1,115 @@
+/* CSS learning*/
+
+
+/* 
+Animations
+*/
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+@keyframes rainbow2{
+    100%,0%{
+        color: rgb(255,0,0);
+    }
+    8%{
+        color: rgb(255,127,0);
+    }
+    16%{
+        color: rgb(255,255,0);
+    }
+    25%{
+        color: rgb(127,255,0);
+    }
+    33%{
+        color: rgb(0,255,0);
+    }
+    41%{
+        color: rgb(0,255,127);
+    }
+    50%{
+        color: rgb(0,255,255);
+    }
+    58%{
+        color: rgb(0,127,255);
+    }
+    66%{
+        color: rgb(0,0,255);
+    }
+    75%{
+        color: rgb(127,0,255);
+    }
+    83%{
+        color: rgb(255,0,255);
+    }
+    91%{
+        color: rgb(255,0,127);
+    }
+}
+@keyframes Background {
+ from {background: black;}
+ to {background: black}   
+}
+
+@keyframes title {
+    from {color: black;}
+    to {color: white;}
+}
+@keyframes TextAnimation {
+    from {color: black;}
+    to {color: white;}
+}
+ /*Main things*/
+body {
+    background: black;
+    animation-name: Background;
+    animation-duration: 8s;
+}
+.Title {
+    background: black;
+    text-align: center;
+    color: white;
+    animation-name: title;
+    animation-duration: 8s;
+}
+
+
+.contact{
+    color:white;
+    position: fixed;     
+    text-align: center;    
+    bottom: 750px; 
+    width: 100%;
+}
+a {
+
+    align-self: flex-end;
+}
+a:link {
+    color:white;
+    text-decoration: none;
+    animation-name: title;
+    animation-duration: 8s;
+}
+
+a:visited {
+    color:white;
+    text-decoration: none;
+
+}
+a:hover {
+    text-decoration: none;
+
+
+}
+
+a:active {
+    text-decoration: none;
+
+}
